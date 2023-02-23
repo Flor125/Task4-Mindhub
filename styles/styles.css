@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/*formato del título cabecera*/
+.h1{
+    position:relative; 
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.image1{
+    width: 1000px;
+    height: 300px;
+    position: sticky;
+    vertical-align: text-bottom; 
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; width: 100%;
+    color: white;
+}
+
+.indice1{
+    position: relative; left: 230px;
+    padding: 3px 3px; 
+    background-color:greenyellow; 
+    color: #ffffff; 
+    text-transform: uppercase;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+.indices{
+    position: relative; left: 230px;
+    padding: 3px 3px; 
+    background-color: #2e518b; 
+    color: #ffffff; 
+    text-transform: uppercase;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+.indices:hover{
+    background-color:greenyellow;
+}
+
+div.seccion{
+    position: relative; left: 400px;
+    top: -140px;
+    width: 760px;
+    height: 380px;
+    padding: 5px;
+    text-align: justify;
+}
+/* logo del equipo*/
+.left{
+    position: relative; left: 175px;
+    top: 30px;
+}
+
+/* tabla - schedule.html*/
+table{   
+    font-size: 20px; margin: 45px; width: 580px; text-align: left; border-collapse: collapse; 
+}
+th{
+    font-size: 23px; font-weight: bolder; padding: 8px; text-align: left;    
+}
+td {padding: 8px;}
+
+/*espaciado del cuerpo del texto*/
+.parrafo-schedule{line-height: 30px;}
+
