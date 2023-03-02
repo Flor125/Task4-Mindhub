@@ -1,30 +1,53 @@
-body{
-    font-family: Arial, Helvetica, sans-serif; 
-    width: 100%; 
-    margin: 0 auto;
+@media only screen and (min-device-width: 480px) and (max-width: 768px) {
+    .indices{
+        justify-content: center;
+    }
+    .indice1{
+        justify-content: center;
+    }
+    .image1{
+        box-sizing:border-box;
+
+    }
+
+    .left{
+        left: -900%;
+        display: flex;
+    }
 }
+    
+    
+@media only screen and (min-device-width: 768px){}
+@media (min-width:1025px){}
+
+
 
 /*formato del título cabecera*/
 .h1{
     position:relative; 
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: center;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;  
+    display:flex;
+    justify-content: center;
 }
 
 .image1{
-    width: 1000px;
-    height: 300px;
-    position: sticky;
-    vertical-align: text-bottom; 
+    width: 50%;
+    height: 20em;
+
+    display: flex;
+    justify-content: center;
 }
 
-.contenedor{
+.container{
     position: relative;
     display: inline-block;
     box-sizing: border-box;
     justify-content: center;
+    display: flex;
 }
 
 .texto-encima{
@@ -32,12 +55,29 @@ body{
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black; width: 100%;
+    background-color: black; width: 50%;
     color: white;
 }
 
+.table {
+	display: flex;   /* Allow the centering to work */
+	margin: 0 auto;
+    justify-content: center;
+    
+}
+
+ul#horizontal-list {
+	min-width: 500px;
+	list-style: none;
+    
+	}
+	ul#horizontal-list li {
+		display: inline;
+        
+	}
+
 .indice1{
-    position: relative; left: 230px;
+    position: relative; 
     padding: 3px 3px; 
     background-color:greenyellow; 
     color: #ffffff; 
@@ -47,7 +87,7 @@ body{
 }
 
 .indices{
-    position: relative; left: 230px;
+    position: relative; 
     padding: 3px 3px; 
     background-color: #2e518b; 
     color: #ffffff; 
@@ -60,18 +100,18 @@ body{
     background-color:greenyellow;
 }
 
-div.seccion{
-    position: relative; left: 400px;
-    top: -140px;
-    width: 760px;
-    height: 380px;
-    padding: 5px;
-    text-align: justify;
+.seccion{
+    position:relative; top: -8.8em; left: 31%;
+    
+    background-color: bisque;
+    box-sizing:content-box;
+    display:inline-block;
 }
 /* logo del equipo*/
 .left{
-    position: relative; left: 175px;
-    top: 30px;
+    position: relative; left: 22%;
+    display: flex;
+    background-color: #2e518b;
 }
 
 /* tabla - schedule.html*/
@@ -84,5 +124,7 @@ th{
 td {padding: 8px;}
 
 /*espaciado del cuerpo del texto*/
-.parrafo-schedule{line-height: 30px;}
+.parrafo-schedule{
+    line-height: 100%;
+}
 
