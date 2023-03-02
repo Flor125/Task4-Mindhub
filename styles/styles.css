@@ -5,13 +5,15 @@
     .indice1{
         justify-content: center;
     }
-    .image1{
-        box-sizing:border-box;
-
-    }
+    table{   
+    font-size: 10%; margin: 3%; width: 58%; text-align: left; border-collapse: collapse; 
+}
+th{
+    font-size: 150%; font-weight: bolder; padding: 2%; text-align: left;    
+}
+td {padding: 2%;}
     
 }
-
 
 /*formato del título cabecera*/
 .h1{
@@ -24,38 +26,39 @@
     display:flex;
     justify-content: center;
 }
-
+/*imagen primcipal*/
 .image1{
-    width: 50%;
-    height: 20em;
+    width: 90%;
+    height: 20rem;
     display:flex;
     justify-content: center;
 }
 
-
+/*imagen principal y texto foot*/
 .container{
     position:sticky;
-    display: inline-block;
     box-sizing: border-box;
     justify-content: center;
     display: flex;
+    width: 100%;
 }
 
+/*texto foot*/
 .texto-encima{
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black; width: 50%;
+    background-color: black; width: 90%;
     color: white;
 }
 
+/*inicio de barra de menú*/
 .table {
 	display: flex;   
 	margin: 0 auto;
     justify-content: center;
 }
-
 ul#horizontal-list {
 	min-width: 500px;
 	list-style: none;
@@ -63,7 +66,6 @@ ul#horizontal-list {
 	ul#horizontal-list li {
 		display: inline;
 	}
-
 .indice1{
     position: relative; 
     padding: 3px 3px; 
@@ -73,6 +75,7 @@ ul#horizontal-list {
     border: 1px solid black;
     box-shadow: 2px 2px rgba(0,0,0,0.5);
 }
+
 
 .indices{
     position: relative; 
@@ -87,35 +90,43 @@ ul#horizontal-list {
 .indices:hover{
     background-color:greenyellow;
 }
+/*Fin de barra de menú*/
 
-
+/*cuerpo de la página*/
 .seccion{
-    position:relative; left: 25%; top: 0.8em;
+    position:relative; left: 12%;
     background-color: aliceblue;
     display:flex;
+    justify-content: center;
     flex-direction: column;
-    width: auto;
+    width: 83%;
+    top: 0.8rem;
+}
+
+
+/*logo del equipo*/
+.left{
+    position:absolute; left: 6%;  
+    display:flex;
+    background-color:#2e518b;
+    width: 5%;
     
 }
 
-.left{
-    position: relative; left: 23%; top: -5em;
-    display:flex;
-    box-sizing:border-box;
-    padding: 1%;
-}
-
-/* tabla - schedule.html*/
-table{   
-    font-size: 20px; margin: 45px; width: 580px; text-align: left; border-collapse: collapse; 
+/* tabla, dentro de schedule.html*/
+table{
+    justify-content: center; 
+    position: relative;  
+    font-size: 100%; margin: 1%; width: 30%; text-align: left; border-collapse: collapse; 
 }
 th{
-    font-size: 23px; font-weight: bolder; padding: 8px; text-align: left;    
+    font-size: 150%; font-weight: bolder; padding-left: 2%; text-align: left;    
 }
-td {padding: 8px;}
+td {padding: 2%;}
 
-/*espaciado del cuerpo del texto*/
+/*espaciado del cuerpo del texto en form.html, schedule.html y contact.html*/
 .parrafo-schedule{
-    line-height: 100%;
+    line-height: 200%;
+
 }
 
