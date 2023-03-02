@@ -88,21 +88,22 @@ ul#horizontal-list {
     background-color:greenyellow;
 }
 
+
 .seccion{
     position:relative; left: 25%; top: 0.8em;
     background-color: aliceblue;
     display:flex;
     flex-direction: column;
-    width: 400px;
+    width: auto;
     
 }
-/* logo del equipo
+
 .left{
     position: relative; left: 23%; top: -5em;
     display:flex;
     box-sizing:border-box;
     padding: 1%;
-}*/
+}
 
 /* tabla - schedule.html*/
 table{   
