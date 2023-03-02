@@ -10,67 +10,69 @@
 <body>
     <header>
         <div class="h1"> Mighty Ducks Hockey League</div>
-        <div align = "center"> 
-            <nav>                
-                <a class="indices" href="./project.html">Home</a>&nbsp;
-                <a class="indices" href="./about.html">About MDHL</a>&nbsp;
-                <a class="indice1" href="./form.html">Form</a>&nbsp;
-                <a class="indices" href="./schedule.html">Schedule</a>&nbsp;
-                <a class="indices" href="./rules.html">Rules</a>&nbsp;
-                <a class="indices" href="./contact.html">Contact</a><br>
-                <div class="contenedor">
-                    <img class="image1" src="./Img/design1_image1.jpg">
-                <div class="texto-encima">Upcoming Events</div>
-                </div>
-            </nav>         
-        </div>
+        <div id="menu-outer">
+            <div class="table">
+              <ul id="horizontal-list">
+                <li><a class="indices" href="./project.html">Home</a></li>
+                <li><a class="indices" href="./about.html">About MDHL</a></li>
+                <li><a class="indice1" href="./form.html">Form</a></li>
+                <li><a class="indices" href="./schedule.html">Schedule</a></li>
+                <li><a class="indices" href="./rules.html">Rules</a></li>
+                <li><a class="indices" href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+                <div class="container">
+                    <img class="image1" src="./Img/design1_image1.jpg" alt="...">
+                <div class="container texto-encima">Upcoming Events</div>
+                </div>        
+        </header>
         <main>
-            <section>
-            <img class="left" src="./Img/logo.png" width="150" height="150">
-            <div class="seccion">
+                <img class="left" src="./Img/logo.png" alt="..." width="150" height="150">
+                <div class="seccion">
                 <form action="./show_data.html" method="get">
                 <div class="parrafo-schedule">
                <h2>Registration Form</h2> 
                <label for="PFname">Player's First Name: </label> <input type="text" id="name" name="Name" placeholder="Paul">&emsp;
                <label for="lastname">Last Name:</label> <input type="text" id="lastname" name="LastName" placeholder="Laurie"><br>
-               <label for="SA">Street Address: </label> <input type="text" id="name" name="Street" placeholder="854 Avocado Avenue"><br>
+               <label for="SA">Street Address: </label> <input type="text" id="street" name="Street" placeholder="854 Avocado Avenue"><br>
                <label for="city">City: </label> <input type="text" id="city" name="City" placeholder="Scottsdale">&emsp;
                <label for="zc">Zip Code: </label> <input type="text" id="zc" name="ZipCode" placeholder="92660"><br>
                <label for="BD">Birth Date: </label> <input type="date" name="BirthDate"><br>
 
-               <label for="gender">Gender: </label> Female<input type="radio" id="gender" name="Gender" value="Female"/> &emsp;
-               Male <input type="radio" id="gender" name="Male" value="Male"/> <br>
+               <label for="gender">Gender: </label> Female<input type="radio" id="gender" name="Gender" value="Female"> &emsp;
+               Male <input type="radio" id="Gender" name="Male" value="Male"> <br>
 
-               Grade <input type="radio" id="grade" name="Grade" value="PreSchool"/>Pre-School &emsp;
-               <input type="radio" id="first" name="Grade" value="1st"/><sup>1st</sup>&emsp;
-               <input type="radio" id="second" name="Grade" value="2nd"/><sup>2nd</sup>&emsp;
-               <input type="radio" id="third" name="Grade" value="3td"/><sup>3td</sup>&emsp;
-               <input type="radio" id="fourth" name="Grade" value="4th"/><sup>4th</sup>&emsp;
-               <input type="radio" id="fifth" name="Grade" value="5th"/><sup>5th</sup>&emsp;<br>
+               Grade <input type="radio" id="grade" name="Grade" value="PreSchool">Pre-School &emsp;
+               <input type="radio" id="first" name="Grade" value="1st"><sup>1st</sup>&emsp;
+               <input type="radio" id="second" name="Grade" value="2nd"><sup>2nd</sup>&emsp;
+               <input type="radio" id="third" name="Grade" value="3td"><sup>3td</sup>&emsp;
+               <input type="radio" id="fourth" name="Grade" value="4th"><sup>4th</sup>&emsp;
+               <input type="radio" id="fifth" name="Grade" value="5th"><sup>5th</sup>&emsp;<br>
 
                <h3>Which elementary school do you live near?</h3>
                <h4>Closest School</h4>
-               <input type="radio" id="school1" name="school" value="AJKatzenmaier"/><sup>AJ Katzenmaier</sup>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-               <input type="radio" id="school2" name="school" value="MarjoriePHart"/><sup>Marjorie P Hart</sup><br>
-               <input type="radio" id="school3" name="school" value="Greenbay"/><sup>Greenbay</sup>&emsp;&emsp;&emsp;&emsp;&emsp;
-               <input type="radio" id="school4" name="school" value="NorthElementary"/><sup>North Elementary</sup><br>
-               <input type="radio" id="school5" name="school" value="HowardAYeager"/><sup>Howard A Yeager</sup>&emsp;&emsp;&nbsp;
-               <input type="radio" id="school6" name="school" value="SouthElementary"/><sup>South Elementary</sup>
+               <input type="radio" id="school1" name="school" value="AJKatzenmaier"><sup>AJ Katzenmaier</sup>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+               <input type="radio" id="school2" name="school" value="MarjoriePHart"><sup>Marjorie P Hart</sup><br>
+               <input type="radio" id="school3" name="school" value="Greenbay"><sup>Greenbay</sup>&emsp;&emsp;&emsp;&emsp;&emsp;
+               <input type="radio" id="school4" name="school" value="NorthElementary"><sup>North Elementary</sup><br>
+               <input type="radio" id="school5" name="school" value="HowardAYeager"><sup>Howard A Yeager</sup>&emsp;&emsp;&nbsp;
+               <input type="radio" id="school6" name="school" value="SouthElementary"><sup>South Elementary</sup>
 
                <h4>What position(s) do you normally play? (check all that apply)</h4>
-               <input type="checkbox" id="play" name="position" value="Forward"/><sup>Forward</sup>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-               <input type="checkbox" id="play" name="position" value="Midfield"/><sup>Midfield</sup><br>
-               <input type="checkbox" id="play" name="position" value="Defense"/><sup>Defense</sup>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-               <input type="checkbox" id="play" name="position" value="Goalkeeper"/><sup>Goalkeeper</sup>
+               <input type="checkbox" id="play" name="position" value="Forward"><sup>Forward</sup>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" id="play1" name="position" value="Midfield"><sup>Midfield</sup><br>
+               <input type="checkbox" id="play2" name="position" value="Defense"><sup>Defense</sup>&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" id="play3" name="position" value="Goalkeeper"><sup>Goalkeeper</sup>
 
                <h4>Uniform Size: </h4>
-               <input type="radio" id="Uniform" name="Size" value="YouthSmall"/><sup>Youth Small</sup>&emsp;&emsp;
-               <input type="radio" id="Uniform" name="Size" value="Medium"/><sup>Medium</sup><br>
-               <input type="radio" id="Uniform" name="Size" value="YouthMedium"/><sup>Youth Medium</sup>&emsp;
-               <input type="radio" id="Uniform" name="Size" value="Large"/><sup>Large</sup><br>
-               <input type="radio" id="Uniform" name="Size" value="YouthLarge"/><sup>Youth Large</sup>&emsp;&nbsp;&nbsp;&nbsp;
-               <input type="radio" id="Uniform" name="Size" value="ExtraLarge"/><sup>Extra - Large</sup><br>
-               <input type="radio" id="Uniform" name="Size" value="Small"/><sup>Small</sup>
+               <input type="radio" id="Uniform" name="Size" value="YouthSmall"><sup>Youth Small</sup>&emsp;&emsp;
+               <input type="radio" id="Uniform1" name="Size" value="Medium"><sup>Medium</sup><br>
+               <input type="radio" id="Uniform2" name="Size" value="YouthMedium"><sup>Youth Medium</sup>&emsp;
+               <input type="radio" id="Uniform3" name="Size" value="Large"><sup>Large</sup><br>
+               <input type="radio" id="Uniform4" name="Size" value="YouthLarge"><sup>Youth Large</sup>&emsp;&nbsp;&nbsp;&nbsp;
+               <input type="radio" id="Uniform5" name="Size" value="ExtraLarge"><sup>Extra - Large</sup><br>
+               <input type="radio" id="Uniform6" name="Size" value="Small"><sup>Small</sup>
 
                <h4>Permission to Play</h4>
                <p>
@@ -86,14 +88,12 @@
                 By signing below, I here by agree and authorize the above. In addition, by signing below, I 
                 also acknowledge that I have read the cancellation policy and agree to its terms.
                </p>
-               <label for="name">Parent / Guardian Signature</label> <input type="text" id="name" name="Parent"><br>
+               <label for="name">Parent / Guardian Signature</label> <input type="text" id="nameFoot" name="Parent"><br>
                <label for="name">Date</label> <input type="date" name="Date"> <br>
-               <input type="submit" value="Send" />
+               <input type="submit" value="Send" >
             </div>
             </form>
             </div>
-        </section>
     </main> 
-</header>
 </body>
 </html>
